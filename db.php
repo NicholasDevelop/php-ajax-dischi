@@ -75,4 +75,4 @@ $discs = [
 
 header('content-type: application/json');
 
-json_encode($discs);
+echo json_encode($discs);

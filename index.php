@@ -108,19 +108,14 @@ $discs = [
                 </div>
 
                 <div class="disc-wrapper">
-
-                    <?php
-                    foreach($discs as $disc){
-                        ?>
-                        <div class="card">  
-                            <img src="<?php echo $disc['poster'] ?>" alt="">
-                            <h4 class="title"><?php echo $disc['title'] ?></h4>
-                            <p class="artist"><?php echo $disc['author'] ?></p>
-                            <p class="year"><?php echo $disc['year'] ?></p>
+                        
+                        <div class="card" v-for="disc in discs">  
+                            <img :src="disc.poster" alt="">
+                            <h4 class="title">{{disc.title}}</h4>
+                            <p class="artist">{{disc.author}}</p>
+                            <p class="year">{{disc.year}}</p>
                         </div>
-                        <?php
-                    }
-                    ?>
+
                 </div>
             </div>
         </div>

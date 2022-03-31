@@ -10,5 +10,8 @@ const app = new Vue({
                 this.discs = res.data
             })
         }
+    },
+    created() {
+        this.fetchDiscs()
     }
 })
