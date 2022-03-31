@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  .container{
+    min-height: 100vh;
+    background-color: #1E2D3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 10px 30px 10px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: rgba(white, 0.1);
+}
+
+header img{
+    width: 40px;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+#search-genre{
+    background-color: #2E3A46;
+    color: #DEE9F1;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+option{
+    background-color: #2E3A46;
+    color: #DEE9F1;
+}
+        
+.disc-wrapper{
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card{
+    width: calc(100%/5 - 25px);
+    padding: 10px;
+    background-color: #2E3A46;
+    text-align: center;
+}
+
+img{
+    aspect-ratio: 1;
+    margin-bottom: 10px;
+}
+
+.title{
+    color: #DEE9F1;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.artist{
+    color: #808080;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.year{
+    color: #808080;
+    font-size: 9px;
+}
